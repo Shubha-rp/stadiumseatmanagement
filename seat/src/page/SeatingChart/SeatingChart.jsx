@@ -420,7 +420,7 @@ const SeatingChart = () => {
   useEffect(() => {
     const fetchBookedSeats = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/booked-seats/${matchId}`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/booked-seats/${matchId}`);
         setBookedSeats(response.data.bookedSeats);
       } catch (error) {
         console.error('Error fetching booked seats:', error);
@@ -447,7 +447,7 @@ const SeatingChart = () => {
       // Send a request to add the seat to booked seats
       // console.log("gr4tg");
       console.log("###############", matchId);
-      axios.post(`http://localhost:8000/api/add-booking`, { seatId, matchId: matchId.toString(), section, row, userId })
+      axios.post(`${import.meta.env.VITE_API_URL}/api/add-booking`, { seatId, matchId: matchId.toString(), section, row, userId })
         .then(response => {
           console.log(response);
         })
@@ -492,7 +492,7 @@ const SeatingChart = () => {
   };
 
   const handlePayment = () => {
-    axios.post(`http://localhost:8000/api/book-seats/${matchId}`, { selectedSeats })
+    axios.post(`${import.meta.env.VITE_API_URL}/api/book-seats/${matchId}`, { selectedSeats })
       .then(response => {
         console.log(response);
         navigate('/payment', { state: { selectedSeats, totalPrice: calculateTotalPrice() } });
