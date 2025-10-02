@@ -9,7 +9,7 @@ const CricketMatches = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/cricketmatches')
+    axios.get(`${import.meta.env.VITE_API_URL}/api/cricketmatches`)
      .then(response => {
         setCricketMatches(response.data);
       })
