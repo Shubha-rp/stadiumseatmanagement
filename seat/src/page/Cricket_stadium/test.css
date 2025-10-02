@@ -1,0 +1,29 @@
+
+figcaption{
+    font-size: 40px;
+   text-align: center;
+    min-width: max-content;
+    color: black;
+}
+.test1 {
+    color: black;
+    text-align: center;
+    font-size: larger;
+    min-width: 345px;
+  min-height: 350px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  width: 100%;
+}
+
+img{
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.test1{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+}

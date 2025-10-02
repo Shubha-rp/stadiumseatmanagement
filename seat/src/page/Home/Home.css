@@ -1,0 +1,400 @@
+.home-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 80px 20px 20px;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px black;
+ 
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hero-content {
+  flex: 1;
+  margin-right: 20px;
+  color: black;
+  text-decoration:dotted;
+  /* text-shadow: 0px 1px 2px black; */
+   /* newchanges */
+   
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.carousel-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.custom-carousel {
+  width: 100%;
+}
+
+.custom-carousel .carousel .slide {
+  display: inline-block;
+  justify-content: center;
+  width: 33%;
+}
+
+.custom-carousel .carousel .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.react-responsive-carousel .control-arrow:before {
+  background-color: transparent;
+}
+
+.react-responsive-carousel .control-arrow {
+  background: none !important;
+}
+
+.react-responsive-carousel .control-arrow:hover {
+  background: none !important;
+}
+
+.react-responsive-carousel .control-arrow:before {
+  background-color: transparent !important;
+}
+
+.react-responsive-carousel .control-arrow:hover:before {
+  background-color: transparent !important;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+
+}
+
+
+.testimonials h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  /* margin-bottom: 20px; */
+  color:black;
+  width:100%;
+  height: 300px;
+   display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.testimonial p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.testimonial .testimonial-img {
+  
+ 
+padding-right: 45%;
+padding-left: 45%;
+/* padding-top: 25%;
+padding-bottom: 25%; */
+  border-radius: 50%;
+ width: 100px;
+ height: 100px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* width: 150px;
+height: 150px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+   */
+  
+}
+.testimonials {
+  padding: 80px 0;
+  background: url("./assets/img/testimonials/testimonials-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.testimonial .rating {
+  color: gold;
+  margin-top: 10px;
+}
+
+.featured-services {
+  margin-top: 50px;
+  color: black;
+}
+
+.featured-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.featured-services li {
+  margin-bottom: 10px;
+}
+
+
+.news-updates {
+  margin-top: 50px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+.social-media-feed {
+  margin-top: 50px;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-contact {
+  margin-top: 10px;
+}
+
+
+    
+
+
+  
+  
+
+
+
+
+ 
+/* General Styling */
+ /*body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+.home-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 80px 20px 20px;
+  background-color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-content {
+  flex: 1;
+  margin-right: 20px;
+  color: white;
+  text-shadow: 2px 2px #333;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.carousel-container {
+  width: 50%;
+  margin: auto;
+}
+
+.custom-carousel {
+  width: 100%;
+}
+
+.custom-carousel .carousel .slide {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-carousel .carousel .slide img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.react-responsive-carousel .control-arrow:before {
+  background-color: transparent;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+
+.testimonials {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.testimonial .rating {
+  color: gold;
+  margin-top: 10px;
+}
+
+
+.featured-services {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+}
+
+.featured-services h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.featured-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.featured-services li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+
+.news-updates {
+  margin-top: 50px;
+  color: black;
+  text-align: center;
+}
+
+.news-updates h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+ 
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-contact {
+  margin-top: 10px;
+} */
