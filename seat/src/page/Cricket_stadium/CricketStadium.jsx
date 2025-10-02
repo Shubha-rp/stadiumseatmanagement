@@ -9,7 +9,7 @@ const CricketStadium = () => {
 
 useEffect(() => {
   console.log('Fetching stadium data...');
-  fetch('http://localhost:8000/api/stadium', { method: 'GET' })
+  fetch(`${import.meta.env.VITE_API_URL}/api/stadium`, { method: 'GET' })
     .then(response => {
       console.log('Response received:', response);
       return response.json();
